@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orbital EVA | Een ruimtewandeling in VR</title>
+<meta name="description" content="Zweef buiten het ISS boven de aarde. Verken een fictief station bij Mars. Ontdek Orbital EVA, een PC-VR-ruimtewandeling gebouwd in Unreal Engine.">
+<meta name="theme-color" content="#080c10">
+<link rel="canonical" href="https://vdecommerce.github.io/orbital-eva-site/">
+<meta property="og:type" content="website"><meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="Orbital EVA | Buiten begint het.">
+<meta property="og:description" content="De aarde onder je. Het station binnen handbereik. Een ruimtewandeling voor PC-VR.">
+<meta property="og:image" content="https://vdecommerce.github.io/orbital-eva-site/assets/earth-showcase.jpg">
+<meta property="og:url" content="https://vdecommerce.github.io/orbital-eva-site/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/earth-showcase.webp">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Orbital EVA","url":"https://vdecommerce.github.io/orbital-eva-site/","inLanguage":"nl","description":"Een PC-VR-ruimtewandeling bij het ISS en een fictief station rond Mars, gebouwd in Unreal Engine."}</script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#ervaring">Naar de inhoud</a>
+<header class="nav">
+<a href="#top" class="wordmark" aria-label="Orbital EVA, bovenaan"><span class="orbit-mark" aria-hidden="true"></span>ORBITAL <span class="wordmark-light">EVA</span></a>
+<nav aria-label="Hoofdnavigatie"><a href="#ervaring">De ervaring</a><a href="#bestemmingen">Bestemmingen</a><a href="#missie">Je missie</a><a href="#ontwikkeling">Ontwikkeling</a></nav>
+<button class="theme-button" type="button" aria-label="Wissel tussen licht en donker">Licht / donker</button>
+</header>
+<main>
+<section class="hero" id="top" aria-labelledby="hero-title">
+<img class="hero-image" src="assets/earth-showcase.webp" width="2400" height="1350" fetchpriority="high" alt="Blender-visualisatie met het NASA ISS-model en de blauwe aarde onder het station">
+<div class="hero-shade"></div>
+<div class="hero-copy">
+<p class="eyebrow">EEN RUIMTEWANDELING VOOR PC-VR</p>
+<h1 id="hero-title">Buiten<br>begint het.</h1>
+<p class="hero-intro">De aarde onder je. Het station binnen handbereik.<br>Laat los en ontdek hoe stilte voelt.</p>
+<a class="button primary" href="#bestemmingen">Verken de werelden <span aria-hidden="true">↗</span></a>
+</div>
+<div class="hero-bottom"><span>01 / AARDE & ISS</span><span>BLENDER-VISUALISATIE / DEZELFDE ASSETS</span><a href="#ervaring" aria-label="Lees verder over de ervaring">SCROLL <span aria-hidden="true">↓</span></a></div>
+</section>
+
+<section class="intro wrap" id="ervaring">
+<div class="intro-index" aria-hidden="true">[ EVA ]<br><span>EXTRAVEHICULAR<br>ACTIVITY</span></div>
+<div class="intro-copy"><h2>Even geen grond<br>onder je voeten.</h2>
+<p class="lead">Je zweeft naast een ruimtestation. Eén hand aan de rail. Achter je ligt de aarde, groot en bijna onwerkelijk dichtbij.</p>
+<p>Orbital EVA maakt van dat moment een interactieve ruimtewandeling. Je trekt jezelf langs het station, laat los en stuurt met korte jetpackimpulsen bij. Zonder impuls blijf je bewegen. Om stil te staan, moet je bewust afremmen.</p>
+<p>Geen race tegen de klok. Wel de ruimte om te kijken, te oefenen en een kleine inspectiemissie uit te voeren.</p></div>
+</section>
+
+<section class="destinations" id="bestemmingen" aria-labelledby="destination-heading">
+<div class="destination-top wrap"><h2 id="destination-heading">Kies je uitzicht.</h2>
+<div class="destination-tabs" role="tablist" aria-label="Bestemming">
+<button role="tab" type="button" id="tab-earth" aria-controls="panel-earth" aria-selected="true" data-world="earth">01 <span>Aarde</span></button>
+<button role="tab" type="button" id="tab-mars" aria-controls="panel-mars" aria-selected="false" tabindex="-1" data-world="mars">02 <span>Mars</span></button>
+</div></div>
+<div id="panel-earth" role="tabpanel" aria-labelledby="tab-earth" tabindex="0" class="world-panel">
+<figure class="world-image"><img src="assets/earth-wide.webp" width="2400" height="1350" loading="lazy" alt="Breed overzicht van het NASA ISS-model in de aarde-omgeving"><figcaption>Unreal Engine / aarde-omgeving</figcaption></figure>
+<div class="world-detail wrap"><div><span class="coordinate">LOW EARTH ORBIT / 400 KM</span><h3>Onze blauwe thuisplaneet.</h3></div><div><p>Wolken boven oceanen, een dunne blauwe atmosfeerrand en een station met de herkenbare zonnepanelen van het ISS. De basis is een 3D-model van NASA, op schaal gebracht voor de ruimtewandeling.</p><p class="detail-note">Een zelfgemaakte EVA-trainingsmodule vult het NASA-model aan. Het is een interactieve interpretatie, geen gecertificeerde ISS-trainer.</p></div></div>
+</div>
+<div id="panel-mars" role="tabpanel" aria-labelledby="tab-mars" tabindex="0" class="world-panel" hidden>
+<figure class="world-image"><img src="assets/mars-orbit.webp" width="2400" height="1350" loading="lazy" alt="Het fictieve Mars-onderzoeksstation boven het rode Marsoppervlak"><figcaption>Unreal Engine / fictief Marsstation</figcaption></figure>
+<div class="world-detail wrap"><div><span class="coordinate">MARS ORBIT / 350 KM / FICTIEF</span><h3>Een ander soort stilte.</h3></div><div><p>Een roestkleurige wereld, een warmere atmosfeerrand en een speciaal ontworpen onderzoeksstation. De planeet gebruikt beeldmateriaal van NASA/JPL-Caltech; het station is een fictief ontwerp.</p><p class="detail-note">Het echte ISS draait om de aarde. De Marsomgeving is een afzonderlijk scenario met dezelfde EVA-bediening.</p></div></div>
+</div>
+</section>
+
+<section class="movement wrap">
+<h2>Kleine impuls.<br>Groot gevoel.</h2>
+<div class="movement-content"><div class="movement-visual"><img src="assets/airlock-detail.webp" width="2400" height="1350" loading="lazy" alt="Detail van de EVA-trainingsmodule met handrails en luchtsluis"><button class="image-expand" type="button" data-full="assets/airlock-detail.webp" aria-label="Vergroot het beeld van de luchtsluis">Bekijk detail ↗</button></div>
+<div class="movement-list">
+<article><span>01</span><div><h3>Vastpakken</h3><p>Grijp een oppervlak binnen handbereik en trek jezelf langs de buitenkant van het station.</p></div></article>
+<article><span>02</span><div><h3>Loslaten</h3><p>Een afzet wordt een beweging. Zonder kunstmatige luchtweerstand blijf je doorzweven.</p></div></article>
+<article><span>03</span><div><h3>Bijsturen</h3><p>Doseer je jetpack en geef een tegenstoot om af te remmen. Je pak toont snelheid en stikstofvoorraad.</p></div></article>
+<article><span>04</span><div><h3>Op adem komen</h3><p>De stabiele stand houdt vrij rollen uitgeschakeld. Met de terugkeerfunctie kom je weer bij het vertrekpunt.</p></div></article>
+</div></div>
+</section>
+
+<section class="mission wrap" id="missie">
+<div class="mission-title"><p class="eyebrow">JE EERSTE EVA</p><h2>Een doel.<br>Alle tijd om te kijken.</h2><p>Drie controlepunten geven je wandeling richting. Kom dichtbij, rem af en voer de inspectie uit.</p></div>
+<ol class="mission-steps">
+<li><span>01 / LUCHTSLUIS</span><h3>Controleer je vertrekpunt.</h3><p>Vind de marker bij de trainingsmodule en maak je eerste gecontroleerde benadering.</p></li>
+<li><span>02 / THERMISCHE AANSLUITING</span><h3>Beweeg met precisie.</h3><p>Navigeer naar het volgende controlepunt. Houd je relatieve snelheid laag voor de inspectie.</p></li>
+<li><span>03 / COMMUNICATIE</span><h3>Rond je buitenronde af.</h3><p>Controleer de laatste unit. Daarna blijf je vrij verkennen of keer je veilig terug.</p></li>
+</ol>
+</section>
+
+<section class="full-image"><img src="assets/station-sunlight.webp" width="2400" height="1350" loading="lazy" alt="Het ruimtestation met scherpe zonverlichting en diepe schaduwen in de Unreal-scène"><div><p>Je hoort je pak.<br>Daarbuiten is het stil.</p></div><span>ORIGINELE PAKGELUIDEN / GEEN EXTERN GELUID IN VACUÜM</span></section>
+
+<section class="development wrap" id="ontwikkeling">
+<h2>Gebouwd om<br>daar te zijn.</h2>
+<p class="lead">Unreal Engine voor de ervaring. Blender voor de hardware. NASA als visuele basis.</p>
+<dl class="specs">
+<div><dt>Platform</dt><dd>PC-VR via OpenXR</dd></div>
+<div><dt>Engine</dt><dd>Unreal Engine 5.8.3</dd></div>
+<div><dt>Werelden</dt><dd>Aarde / ISS & Mars / fictief station</dd></div>
+<div><dt>Beweging</dt><dd>Jetpack, traagheid, actief remmen en grijpen</dd></div>
+<div><dt>Comfort</dt><dd>Stabiele stand, veiligheidslijn en veilige terugkeer</dd></div>
+<div><dt>Projectstatus</dt><dd id="project-status">In ontwikkeling. PC-tests en Quest-controle worden apart bijgehouden.</dd></div>
+</dl>
+<details><summary>Wat simuleert de ervaring precies?</summary><p>De vlucht is relatief ten opzichte van het station en bedoeld voor korte EVA-afstanden. De scène gebruikt planeetafmetingen en een gekozen baanhoogte voor het uitzicht. Het is geen volledige berekening van baanmechanica, zuurstofbeheer of echte astronautenprocedures.</p></details>
+<details><summary>Hoe werkt de Quest met de pc?</summary><p>De pc rendert de scène. De Quest levert het stereobeeld en de gevolgde hoofd- en controllerbewegingen via een geschikte OpenXR-verbinding. Op de Linux-werkplek is WiVRn beschikbaar. Beeld, bediening en comfort moeten op de aangesloten headset worden gecontroleerd.</p></details>
+<details><summary>Zijn dit echte beelden uit de ervaring?</summary><p>Het openingsbeeld is een afzonderlijke Blender-visualisatie met dezelfde stationgeometrie en aardtexturen. De overige galeriebeelden komen uit het Unreal-project. Het zijn geen foto's van een echte ruimtewandeling en geen bewijs van prestaties of beeldkwaliteit op de Quest.</p></details>
+</section>
+</main>
+<footer class="wrap"><div class="footer-top"><a href="#top" class="wordmark">ORBITAL <span class="wordmark-light">EVA</span></a><a href="https://github.com/vdecommerce/orbital-eva-site" target="_blank" rel="noopener">Website op GitHub ↗</a></div><p>Een project van Van Dijken E-Commerce. ISS-model: NASA VTAD. Mars: NASA/JPL-Caltech. Aardtexturen: bestaande NASA Earth Textures-collectie uit de eigen Eagle-bibliotheek.</p><p><a href="https://science.nasa.gov/resource/international-space-station-3d-model/">ISS-bron</a> · <a href="https://science.nasa.gov/resource/planet-mars-3d-model/">Mars-bron</a> · <a href="https://www.nasa.gov/nasa-brand-center/images-and-media/">NASA mediagebruik</a></p><p class="footer-small">Onafhankelijk project. Geen samenwerking met of goedkeuring door NASA, ESA of Meta. Geen tracking of cookies.</p></footer>
+<dialog id="image-dialog" aria-label="Vergroot scènebeeld"><button type="button" class="dialog-close" autofocus>Sluiten ×</button><img src="assets/airlock-detail.webp" width="2400" height="1350" alt="Vergroot detail van de EVA-luchtsluis"></dialog>
+</body></html>
