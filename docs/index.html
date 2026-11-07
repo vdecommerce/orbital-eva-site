@@ -17,6 +17,8 @@
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Orbital EVA","url":"https://vdecommerce.github.io/orbital-eva-site/","inLanguage":"nl","description":"Een PC-VR-ruimtewandeling bij het ISS en een fictief station rond Mars, gebouwd in Unreal Engine."}</script>
 <script src="app.js" defer></script>
+<link rel="stylesheet" href="assets/inspection.css">
+<script src="assets/inspection.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#ervaring">Naar de inhoud</a>
@@ -30,35 +32,35 @@
 <img class="hero-image" src="assets/earth-showcase.webp" width="2400" height="1350" fetchpriority="high" alt="Blender-visualisatie met het NASA ISS-model en de blauwe aarde onder het station">
 <div class="hero-shade"></div>
 <div class="hero-copy">
-<p class="eyebrow">EEN RUIMTEWANDELING VOOR PC-VR</p>
-<h1 id="hero-title">Buiten<br>begint het.</h1>
+<p class="eyebrow">Een ruimtewandeling voor PC-VR</p>
+<h1 id="hero-title">Buiten<br><span>begint het.</span></h1>
 <p class="hero-intro">De aarde onder je. Het station binnen handbereik.<br>Laat los en ontdek hoe stilte voelt.</p>
 <a class="button primary" href="#bestemmingen">Verken de werelden <span aria-hidden="true">↗</span></a>
 </div>
-<div class="hero-bottom"><span>01 / AARDE & ISS</span><span>BLENDER-VISUALISATIE / DEZELFDE ASSETS</span><a href="#ervaring" aria-label="Lees verder over de ervaring">SCROLL <span aria-hidden="true">↓</span></a></div>
+<div class="hero-caption"><span>Aarde & ISS</span><span>Blender-visualisatie met projectassets</span></div>
 </section>
 
 <section class="intro wrap" id="ervaring">
-<div class="intro-index" aria-hidden="true">[ EVA ]<br><span>EXTRAVEHICULAR<br>ACTIVITY</span></div>
+<div class="intro-index"><span>EXTRAVEHICULAR ACTIVITY</span><p>De afstand is klein.<br>Het perspectief niet.</p></div>
 <div class="intro-copy"><h2>Even geen grond<br>onder je voeten.</h2>
 <p class="lead">Je zweeft naast een ruimtestation. Eén hand aan de rail. Achter je ligt de aarde, groot en bijna onwerkelijk dichtbij.</p>
 <p>Orbital EVA maakt van dat moment een interactieve ruimtewandeling. Je trekt jezelf langs het station, laat los en stuurt met korte jetpackimpulsen bij. Zonder impuls blijf je bewegen. Om stil te staan, moet je bewust afremmen.</p>
 <p>Geen race tegen de klok. Wel de ruimte om te kijken, te oefenen en een kleine inspectiemissie uit te voeren.</p></div>
 </section>
 
-<section class="destinations" id="bestemmingen" aria-labelledby="destination-heading">
-<div class="destination-top wrap"><h2 id="destination-heading">Kies je uitzicht.</h2>
+<section class="destinations wrap" id="bestemmingen" aria-labelledby="destination-heading">
+<div class="destination-top"><h2 id="destination-heading">Kies je uitzicht.</h2>
 <div class="destination-tabs" role="tablist" aria-label="Bestemming">
 <button role="tab" type="button" id="tab-earth" aria-controls="panel-earth" aria-selected="true" data-world="earth">01 <span>Aarde</span></button>
 <button role="tab" type="button" id="tab-mars" aria-controls="panel-mars" aria-selected="false" tabindex="-1" data-world="mars">02 <span>Mars</span></button>
 </div></div>
 <div id="panel-earth" role="tabpanel" aria-labelledby="tab-earth" tabindex="0" class="world-panel">
 <figure class="world-image"><img src="assets/earth-wide.webp" width="2400" height="1350" loading="lazy" alt="Breed overzicht van het NASA ISS-model in de aarde-omgeving"><figcaption>Unreal Engine / aarde-omgeving</figcaption></figure>
-<div class="world-detail wrap"><div><span class="coordinate">LOW EARTH ORBIT / 400 KM</span><h3>Onze blauwe thuisplaneet.</h3></div><div><p>Wolken boven oceanen, een dunne blauwe atmosfeerrand en een station met de herkenbare zonnepanelen van het ISS. De basis is een 3D-model van NASA, op schaal gebracht voor de ruimtewandeling.</p><p class="detail-note">Een zelfgemaakte EVA-trainingsmodule vult het NASA-model aan. Het is een interactieve interpretatie, geen gecertificeerde ISS-trainer.</p></div></div>
+<div class="world-detail"><div><span class="coordinate">LOW EARTH ORBIT / 400 KM</span><h3>Onze blauwe thuisplaneet.</h3></div><div><p>Wolken boven oceanen, een dunne blauwe atmosfeerrand en een station met de herkenbare zonnepanelen van het ISS. De basis is een 3D-model van NASA, op schaal gebracht voor de ruimtewandeling.</p><p class="detail-note">Een zelfgemaakte EVA-trainingsmodule vult het NASA-model aan. Het is een interactieve interpretatie, geen gecertificeerde ISS-trainer.</p></div></div>
 </div>
 <div id="panel-mars" role="tabpanel" aria-labelledby="tab-mars" tabindex="0" class="world-panel" hidden>
 <figure class="world-image"><img src="assets/mars-orbit.webp" width="2400" height="1350" loading="lazy" alt="Het fictieve Mars-onderzoeksstation boven het rode Marsoppervlak"><figcaption>Unreal Engine / fictief Marsstation</figcaption></figure>
-<div class="world-detail wrap"><div><span class="coordinate">MARS ORBIT / 350 KM / FICTIEF</span><h3>Een ander soort stilte.</h3></div><div><p>Een roestkleurige wereld, een warmere atmosfeerrand en een speciaal ontworpen onderzoeksstation. De planeet gebruikt beeldmateriaal van NASA/JPL-Caltech; het station is een fictief ontwerp.</p><p class="detail-note">Het echte ISS draait om de aarde. De Marsomgeving is een afzonderlijk scenario met dezelfde EVA-bediening.</p></div></div>
+<div class="world-detail"><div><span class="coordinate">MARS ORBIT / 350 KM / FICTIEF</span><h3>Een ander soort stilte.</h3></div><div><p>Een roestkleurige wereld, een warmere atmosfeerrand en een speciaal ontworpen onderzoeksstation. De planeet gebruikt beeldmateriaal van NASA/JPL-Caltech; het station is een fictief ontwerp.</p><p class="detail-note">Het echte ISS draait om de aarde. De Marsomgeving is een afzonderlijk scenario met dezelfde EVA-bediening.</p></div></div>
 </div>
 </section>
 
@@ -74,7 +76,8 @@
 </section>
 
 <section class="mission wrap" id="missie">
-<div class="mission-title"><p class="eyebrow">JE EERSTE EVA</p><h2>Een doel.<br>Alle tijd om te kijken.</h2><p>Drie controlepunten geven je wandeling richting. Kom dichtbij, rem af en voer de inspectie uit.</p></div>
+<div class="mission-title"><p class="eyebrow">Je eerste EVA</p><h2>Een doel.<br>Alle tijd om te kijken.</h2><p>Drie controlepunten geven je wandeling richting. Kom dichtbij, rem af en voer de inspectie uit.</p></div>
+<div class="inspection-demo"><div id="inspection-stage" role="img" aria-label="Uitleg: benader de luchtsluis, rem af en voer de inspectie uit."><img src="assets/airlock-detail.webp" width="2400" height="1350" loading="lazy" alt="Detail van het inspectiepunt bij de luchtsluis"></div><p class="demo-caption">Geanimeerde uitleg van de inspectie. Geen gameplayopname of live telemetrie.</p><button class="demo-replay" type="button">Speel uitleg opnieuw <span aria-hidden="true">↻</span></button></div>
 <ol class="mission-steps">
 <li><span>01 / LUCHTSLUIS</span><h3>Controleer je vertrekpunt.</h3><p>Vind de marker bij de trainingsmodule en maak je eerste gecontroleerde benadering.</p></li>
 <li><span>02 / THERMISCHE AANSLUITING</span><h3>Beweeg met precisie.</h3><p>Navigeer naar het volgende controlepunt. Houd je relatieve snelheid laag voor de inspectie.</p></li>

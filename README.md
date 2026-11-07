@@ -8,3 +8,10 @@ npm run check
 npm run build
 
 npm run pages bereidt de gepubliceerde snapshot in docs/ voor. GitHub Pages publiceert main:/docs, zonder aparte workflowrechten. Bronwijzigingen staan in src/; docs/ wordt uitsluitend na controle bijgewerkt. Beeldcredits staan op de pagina. Publiceer geen ruwe Eagle-textures of privéconfiguratie.
+
+## Inspectievisualisatie
+
+De inspectie-uitleg gebruikt een afzonderlijk gebundelde React-component met de
+Stageshow-kit; de rest van de site blijft statisch. `npm run build` bouwt beide.
+Bron, licentie en ontwerpkeuzes staan in `scene/README.md`; verificatie staat in
+`scene/REHEARSAL.md`. De animatie is uitleg en geen gameplayopname.
