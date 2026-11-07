@@ -2,7 +2,7 @@ import {readFile,access} from 'node:fs/promises';
 const html=await readFile('src/index.html','utf8');const failures=[];
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
  const ref=match[1];if(/^(https?:|mailto:)/.test(ref))continue;
- try{await access(/^assets\/inspection\.(js|css)$/.test(ref)?'scene/Inspection.tsx':'src/'+ref.split('#')[0])}catch{failures.push('Missing '+ref)}
+ try{await access('src/'+ref.split('#')[0])}catch{failures.push('Missing '+ref)}
 }
 for(const match of html.matchAll(/href="#([^"]+)"/g))if(!html.includes('id="'+match[1]+'"'))failures.push('Broken anchor '+match[1]);
 for(const match of html.matchAll(/<img\b[^>]*>/g))if(!/\balt=/.test(match[0]))failures.push('Image without alt text');

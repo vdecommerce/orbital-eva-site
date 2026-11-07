@@ -29,3 +29,25 @@ document.querySelectorAll('[data-full]').forEach(button => button.addEventListen
 dialog.querySelector('button').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
 dialog.addEventListener('close',()=>opener?.focus());
+
+// Load the explanatory scene near its section instead of blocking the hero.
+const inspectionHost = document.getElementById('inspection-stage');
+let inspectionLoaded = false;
+function loadInspection() {
+  if (inspectionLoaded || !inspectionHost) return;
+  inspectionLoaded = true;
+  const css = document.createElement('link');
+  css.rel = 'stylesheet'; css.href = 'assets/inspection.css';
+  document.head.append(css);
+  const scene = document.createElement('script');
+  scene.src = 'assets/inspection.js'; scene.defer = true;
+  document.head.append(scene);
+}
+if (inspectionHost) {
+  if (typeof IntersectionObserver !== 'undefined') {
+    const observer = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) { loadInspection(); observer.disconnect(); }
+    }, { rootMargin: '600px' });
+    observer.observe(inspectionHost);
+  } else loadInspection();
+}

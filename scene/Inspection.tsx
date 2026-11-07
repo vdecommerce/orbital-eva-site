@@ -30,7 +30,7 @@ async function inspect(a: Act<State>) {
 }
 function Inspection() {
   return <Stage width={600} height={460} compact={{below: 560, width:350, height:400}}
-    theme="dark" accent="#b8dedb" fidelity="realistic" initial={initial} poster={poster}
+    theme="dark" accent="#b8dedb" fidelity="realistic" initial={window.matchMedia('(prefers-reduced-motion: reduce)').matches ? poster : initial} poster={poster}
     play="once" script={inspect} className="eva-scene" cursor={{at:{wide:{x:500,y:85},compact:{x:280,y:60}}}}
     tokens={{'--ss-font':'Arial, sans-serif','--ss-radius-md':'12px','--ss-accent-ink':'#102422'}}>
     {(s) => <>

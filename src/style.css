@@ -16,3 +16,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 @media(prefers-reduced-transparency:reduce){.image-expand{background:#0d1b24}}
 .hero :focus-visible,.image-expand:focus-visible{outline-color:#e9f1f2}
+
+.inspection-demo{container-type:inline-size}#inspection-stage{min-height:460px;max-width:600px}
+@container(max-width:560px){#inspection-stage{min-height:400px}}
