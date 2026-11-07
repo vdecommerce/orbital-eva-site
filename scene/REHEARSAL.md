@@ -31,3 +31,9 @@ keyboard tabs, dialog focus restoration and headset-validation caveats.
 
 Not checked: physical touch hardware, Safari, Firefox, actual VR gameplay,
 headset performance or every transition frame without sampling gaps.
+
+Final host check: after deferring the scene and adding a responsive hero source,
+all six viewport/theme combinations and reduced-motion/replay checks passed again.
+Local mobile Lighthouse: performance 95, accessibility 100, best practices 100,
+SEO 100; LCP 3.0s under simulated mobile throttling, CLS 0. These are local lab
+results, not field performance or a guarantee for other devices.
